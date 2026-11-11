@@ -32,6 +32,14 @@ android {
 }
 
 dependencies {
+    val nav_version = "2.10.2"
+
+    // Jetpack Compose Integration
+    implementation("androidx.navigation:navigation-compose:${nav_version}")
+
+    // Views/Fragments Integration
+    implementation("androidx.navigation:navigation-fragment:${nav_version}")
+    implementation("androidx.navigation:navigation-ui:${nav_version}")
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
